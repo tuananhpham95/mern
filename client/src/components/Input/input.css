@@ -44,6 +44,29 @@
   padding: 0 5px;
   color: #fff;
 }
+.input label .input_icon {
+  color: #1d1927;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(92%, -50%);
+  width: 100%;
+  cursor: pointer;
+}
+
+.toast-failed {
+  background: #f96a8b !important;
+  color: #fff;
+}
+
+.toast-success {
+  background: #009688 !important;
+  color: #fff;
+}
+
+input[type=text]:disabled {
+  color: #000;
+}
 
 @media (min-width: 1200px) {
   .input label input {

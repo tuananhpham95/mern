@@ -24,23 +24,27 @@ const AuthLayout = () => {
     setRegister(false);
     setForgot(true);
   };
+
   return (
     <div className="authlayout">
+      {/* logo */}
       <div className="authlayout_logo">
         <img src="./assets/img/shuttle.svg" alt="logo" />
       </div>
+      {/* form */}
       {login && <Login />}
       {register && <Register />}
       {forgot && <Forgot />}
+      {/* actions */}
       <div className="authlayout_actions">
         <p
-          className="authlayout_actions_l"
+          className="authlayout_actions-l"
           onClick={login ? handleRegister : handleLogin}
         >
-          {login ? "Register" : "Login"}
+          {login ? "Register ?" : "Login ?"}
         </p>
-        <p className="authlayout_actions_r" onClick={handleForgot}>
-          forgot
+        <p className="authlayout_actions-r" onClick={handleForgot}>
+          forgot ?
         </p>
       </div>
     </div>

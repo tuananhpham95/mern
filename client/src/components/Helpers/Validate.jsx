@@ -14,7 +14,7 @@ export const isEmail = (email) => {
 
 // check password length
 export const isLength = (password) => {
-  if (password.lenght < 6) return true;
+  if (password.length < 6) return true;
   return false;
 };
 

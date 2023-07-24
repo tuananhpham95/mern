@@ -24,7 +24,6 @@ const Profile = () => {
   const [avatar, setAvatar] = useState(false);
   const [data, setData] = useState(initialState);
   const { name, password, cf_password } = data;
-
   const handleInput = () => {
     inputFile.current.click();
   };
@@ -36,6 +35,7 @@ const Profile = () => {
   const handleChange = (e) => {
     setData({ ...data, [e.target.name]: e.target.value });
   };
+
   const changeAvatar = async (e) => {
     e.preventDefault();
     try {
@@ -146,6 +146,7 @@ const Profile = () => {
       handleReset();
     }
   };
+
   return (
     <>
       <ToastContainer />

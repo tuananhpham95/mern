@@ -39,7 +39,7 @@ const ActivateLayout = () => {
     <div className="activate">
       <ToastContainer />
       <p>
-        ready to login ? 👉 <span onClick={handleClick}>here</span>{" "}
+        ready to login ? 👉🏻 <span onClick={handleClick}>Here</span>
       </p>
     </div>
   );

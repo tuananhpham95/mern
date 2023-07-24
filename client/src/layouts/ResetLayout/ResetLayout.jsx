@@ -1,9 +1,11 @@
 import Reset from "../../components/Reset/Reset";
 import "./resetlayout.css";
+import { useNavigate } from "react-router-dom";
 
-const ResetLayout = ({ history }) => {
+const ResetLayout = () => {
+  const navigate = useNavigate();
   const handleClick = () => {
-    history.push("/");
+    navigate("/");
   };
 
   return (

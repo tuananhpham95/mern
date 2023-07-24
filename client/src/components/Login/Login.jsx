@@ -9,7 +9,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Input from "../Input/Input";
 import "./login.css";
 import { AuthContext } from "../../context/AuthContext";
-import GoogleLogin from "react-google-login";
+/* import GoogleLogin from "react-google-login"; */
 
 const initialState = {
   name: "",
@@ -56,7 +56,7 @@ const Login = () => {
     }
   };
 
-  const googleSuccess = async (res) => {
+  /* const googleSuccess = async (res) => {
     const token = res?.tokenId;
     try {
       await axios.post("/api/auth/google_signing", { tokenId: token });
@@ -71,11 +71,14 @@ const Login = () => {
   };
 
   const googleError = () => {
-    toast("There was an error signing in, please try again later.", {
-      className: "toast-failed",
-      bodyClassName: "toast-failed",
-    });
-  };
+    toast(
+      "There was an error signing in with Google, please try again later.",
+      {
+        className: "toast-failed",
+        bodyClassName: "toast-failed",
+      }
+    );
+  }; */
 
   return (
     <>
@@ -97,7 +100,7 @@ const Login = () => {
         />
         <div className="login_btn">
           <button type="submit">login</button>
-          <GoogleLogin
+          {/*  <GoogleLogin
             clientId={process.env.REACT_APP_G_CLIENT_ID}
             render={(renderProps) => (
               <button
@@ -111,7 +114,7 @@ const Login = () => {
             cookiePolicy={"single_host_origin"}
             onSuccess={googleSuccess}
             onFailure={googleError}
-          />
+          /> */}
         </div>
       </form>
     </>

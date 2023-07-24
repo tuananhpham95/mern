@@ -38,12 +38,12 @@ const AuthLayout = () => {
       {/* actions */}
       <div className="authlayout_actions">
         <p
-          className="authlayout_actions-l"
+          className="authlayout_actions_l"
           onClick={login ? handleRegister : handleLogin}
         >
           {login ? "Register ?" : "Login ?"}
         </p>
-        <p className="authlayout_actions-r" onClick={handleForgot}>
+        <p className="authlayout_actions_r" onClick={handleForgot}>
           forgot ?
         </p>
       </div>

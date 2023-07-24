@@ -17,7 +17,6 @@ function App() {
       const getToken = async () => {
         const res = await axios.post("/api/auth/access", null);
         dispatch({ type: "GET_TOKEN", payload: res.data.access_token });
-        console.log(res.data);
       };
       getToken();
     }
